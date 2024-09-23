@@ -1,0 +1,71 @@
+#http request strings
+request.accesstypes
+request.httpmethod
+request.cookies
+request.url
+request.browser
+request.querystring
+request.certificate
+request.urlreferrer
+request.files
+request.item
+request.rawurl
+request.useragent
+request.headers
+request.form
+request.servervariables
+request.userlanguages
+request.TotalBytes
+request.BinaryRead
+#html output
+request.accesstypes
+request.httpmethod
+request.cookies
+request.url
+request.browser
+request.querystring
+request.certificate
+request.urlreferrer
+request.files
+request.item
+request.rawurl
+request.useragent
+request.headers
+request.form
+request.servervariables
+request.userlanguages
+request.TotalBytes
+request.BinaryRead
+#sql and DB
+exec sp_
+select from
+insert
+update
+delete from where
+delete
+execute sp_
+exec xp_
+exec @
+execute @
+executestatement
+executeSQL
+setfilter
+executeQuery
+GetQueryResultInXML
+adodb
+sqloledb
+sql server
+driver
+Server.CreateObject
+.Provider
+System.Data.sql
+ADODB.recordset
+New OleDbConnection
+ExecuteReader
+DataSource
+SqlCommand
+Microsoft.Jet
+SqlDataReader
+ExecuteReader
+SqlDataAdapter
+StoredProcedure

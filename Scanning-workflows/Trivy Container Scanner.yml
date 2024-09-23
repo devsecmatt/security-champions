@@ -1,0 +1,38 @@
+name: Build and Scan Container Image
+
+# This is the Aqua Trivy Container Security Scanner.
+# This results will be uploaded into your Repos "Security" tab.
+# https://github.com/aquasecurity/trivy
+
+# on:
+#  push:
+#    branches:
+#      - main
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build an image from Dockerfile
+        run: |
+          docker build -t frails-app-test:${{ github.sha }} .
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: 'frails-app-test:${{ github.sha }}'
+          format: 'table'
+          exit-code: '1'
+          ignore-unfixed: true
+          vuln-type: 'os,library'
+          severity: 'CRITICAL,HIGH'
+          output: 'trivy-results.sarif'
+
+      - name: Upload Trivy scan results to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v2
+        if: always() #upload results even with non zero exits
+        with:
+          sarif_file: 'trivy-results.sarif'

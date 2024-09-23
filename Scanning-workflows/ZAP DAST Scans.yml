@@ -1,0 +1,26 @@
+name: Zed Attack Proxy Application Security Scanner
+
+# This deploys ZAP to scan your web facing application for common vulnerabilities.
+# Any findings will be published on your Repos "Issues" tab.
+# https://github.com/zaproxy/action-full-scan
+
+on:
+  schedule:
+    # Runs every day At 01:00.
+    - cron:  '0 1 * * *'
+  push:
+    branches: [ "main" ]
+
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+    name: Scan ZAP website
+    steps:
+      - name: ZAP Scan
+        uses: zaproxy/action-full-scan@v0.4.0
+        with:
+          target: 'https://qa.dutchie.dev/'
+
+# TODO: Use special release container for authenticated scanning
+# https://hub.docker.com/r/ictu/zap2docker-weekly/
+# ^ WARNING this is about to be deprecated :(
