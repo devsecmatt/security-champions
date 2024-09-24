@@ -1,5 +1,5 @@
 # security-champions
-Uplift and scaling our Application Security - for the benefit of everyone!
+Uplift and scaling Application Security - for the benefit of everyone!
 
 ```
        @@@@@@@@@@@@@@@@@@
@@ -13,11 +13,7 @@ Uplift and scaling our Application Security - for the benefit of everyone!
  @@@@@@@@@@@@@@@/,/,/./'/_|.\'\,\'
    @@@@@@@@@@@@@|  | | | | | | | |
                  \_|_|_|_|_|_|_|_|
-     _       _       _     _
-  __| |_   _| |_ ___| |__ (_) ___
- / _  | | | | __/ __| '_ \| |/ _ \'
-| (_| | |_| | || (__| | | | |  __/
- \__,_|\__,_|\__\___|_| |_|_|\___|
+
 ```
 
 # Usage
