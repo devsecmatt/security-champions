@@ -26,5 +26,4 @@ Use this Repo to inform your threat models of your new designs and guide your se
 | PR-Checklists/ | a list of questions for different code features you may be implementing - authorization, sensitive info, session handling, input sanitization, etc. Check them out! | |
 | Scanning-workflows | Yamls for code, container, and application security scanning. | | <br>
 | ASVS | OWASP Application Security Verification Standard | link-me | <br>
-<p> Please always feel free to tag in @GetDutchie/security-champions team for your PR's, or just hit us up in slack @security, @security-champions, #help-ask-security for interesting convo's! <3 
 
